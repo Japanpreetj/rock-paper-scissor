@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+        <div class="headings">
+            <p>ROCK</p><br>
+            <p>PAPER</p><br>
+            <p>SCISSOR</p><br>
+        </div>
+        <div class="scores">
+            <div class="comp">
+                <h3 class="score">
+                COMPUTER <br>
+                SCORE
+                </h3>
+                <h2 id="computer"></h2>
+                </div>
+            <div class="user">
+                <h3 class="score">
+                YOUR<br>
+                SCORE</h3>
+                <h2 id="you"></h2>
+            </div>
+        </div>
+    </div>
+    <div id="node">
+    <div class="buttons">
+        <button class="button" id="rock" data-button="rock" onclick="makeselection(0)">
+            <img src="rock.png">
+        </button>
+        <button class="button" id="paper" data-button="paper" onclick="makeselection(1)">
+            <img src="paper.png">
+        </button>
+        <button class="button" id="scissor" data-button="scissor" onclick="makeselection(2)">
+            <img src="scissor.png">
+        </button>
+        <img class="line1" src="Line 1.png">
+        <img class="line3" src="Line 3.png">
+        <img class="line2" src="Line 2.png">
+    </div>
+    <div class="parent" id="parent">
+    <div class="instructions">
+        <h3 class="games">GAME RULES</h3><br>
+        <ul class="list">
+            <li><text class="p1"> </text>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li><text class="p2"> </text>Agree ahead of time whether you'll count off "rock,paper,scissors,shoot" or just "rock,paper,scissors."</li>
+            <li><text class="p3"> </text>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+            <li><text class="p4"> </text>If both players lay down the same hand, each player lays down another hand.</li>
+        </ul>
+        <button class="close" onclick="closeRules()">
+            <img src="X.png">
+        </button>
+    </div>
+</div>
+    <button class="rule" onclick="openRules()">RULES</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
